@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "SAI_Tasks", "SAI_Tasks\SAI_Tasks.pyproj", "{1A053F78-2E46-424F-89F2-8B312485CF85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A053F78-2E46-424F-89F2-8B312485CF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A053F78-2E46-424F-89F2-8B312485CF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C734B4B-5B5C-4AF6-AF3E-2DF222866793}
+	EndGlobalSection
+EndGlobal
