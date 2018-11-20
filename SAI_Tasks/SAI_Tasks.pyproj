@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>1a053f78-2e46-424f-89f2-8b312485cf85</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Task1\SAI_Task_1.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,13 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Task1\SAI_Task_1.py" />
+    <Compile Include="Task1\CheeseShop_KevinSchneider_LukasWeil.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Task1\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Task1\Task1.md" />
+    <Content Include="Task1\Exercise_1_KevinSchneider_LukasWeil.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

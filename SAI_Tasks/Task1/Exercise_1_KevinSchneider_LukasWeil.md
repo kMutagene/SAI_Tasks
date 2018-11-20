@@ -32,4 +32,4 @@ Due to statement 2, there must be at least 1 pear in the bowl, and an arbitrary 
 
 ## Task 5 The Cheese Shop
 
-See Task1_KevinSchneider_LukasWeil.py
+See CheeseShop_KevinSchneider_LukasWeil.py
