@@ -74,7 +74,7 @@ prove that by applying the resolution method.
 **Solution**: The formula is satisfiable. ¬B ¬A X ¬F ¬Z ¬P is a possible solution:
 
 <pre>
-B A X F Z P | (((((B V -A) & ((-B V -X) V F)) & (-Z V X)) & ((Z V X) V P)) & ((-B V -X) V -F)) & ((Z V X) V -P)
+B A X F Z P | (((((B V -A) ∧ ((-B V -X) V F)) ∧ (-Z V X)) ∧ ((Z V X) V P)) ∧ ((-B V -X) V -F)) ∧ ((Z V X) V -P)
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 0 0 1 0 0 0 |        1 1   1   1  1 0   1     1  1  1     1     1    1     1   1  1 0   1 1    1     1    1 1  
 </pre>
