@@ -55,7 +55,29 @@ Therefore, W ∧ ¬H is not satisfiable and W |= H holds.
 
 </br>
 
+### b)
 
+Determine whether the following formulas are satisfiable or not. If yes,
+provide a model (i.e., an interpretation that satisfies the formula); if no,
+prove that by applying the resolution method.
+
+(S ∨ W) ∧ (S ∨ ¬W) ∧ (¬S ∨ W) ∧ (¬S ∨ ¬W)
+
+**Solution**: The formula is not satisfiable:
+
+- (S ∨ W) ∧ (S ∨ ¬W) -> S
+- (¬S ∨ ¬W) ∧ (¬S ∨ W) -> ¬S
+- ¬S ∨ S -> ()
+
+(B ∨ ¬A) ∧ (¬B ∨ ¬X ∨ F) ∧ (¬Z ∨ X) ∧ (Z ∨ X ∨ P) ∧ (¬B ∨ ¬X ∨ ¬F) ∧ (Z ∨ X ∨ ¬P)
+
+**Solution**: The formula is satisfiable. ¬B ¬A X ¬F ¬Z ¬P is a possible solution:
+
+<pre>
+B A X F Z P | (((((B V -A) & ((-B V -X) V F)) & (-Z V X)) & ((Z V X) V P)) & ((-B V -X) V -F)) & ((Z V X) V -P)
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+0 0 1 0 0 0 |        1 1   1   1  1 0   1     1  1  1     1     1    1     1   1  1 0   1 1    1     1    1 1  
+</pre>
 
 ## Task 2 -
 
