@@ -79,8 +79,25 @@ B A X F Z P | (((((B V -A) ∧ ((-B V -X) V F)) ∧ (-Z V X)) ∧ ((Z V X) V P))
 0 0 1 0 0 0 |        1 1   1   1  1 0   1     1  1  1     1     1    1     1   1  1 0   1 1    1     1    1 1  
 </pre>
 
-## Task 2 -
+## Task 2 - Unification
 
+Unify the following pairs of clauses. First, select suitable candidates that may
+be unifiable from each set, then apply the method described in the lecture.
+Finally, apply the resulting substitution to the whole clause.
+
+{p(ƒ (X, Y), Z), q(a, X)} and {¬q(W, b), r(a, c)}
+
+**Solution**:
+
+ - p(ƒ (X, Y), Z) cant be unified with ¬q(W, b) or r(a, c) because the predicate symbols dont match.
+ -  q(a, X) and r(a, c) cant be unified because the predicate symbols dont match.
+
+ - 
+
+{q(ƒ (ƒ (X, Y), X)), ¬p(Z)} and {q(ƒ (ƒ (g(c), Z), g(Z)))}
+
+Hint: Imagine you are trying to apply the resolution rule. Only one literal needs
+to match.
 ## Task 3 -
 
 ## Task 4 -
