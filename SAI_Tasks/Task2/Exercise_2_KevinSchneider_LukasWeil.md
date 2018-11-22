@@ -22,6 +22,8 @@ Hypothesis H ≡ ¬(¬F ∨ X ∨ ¬B ∨ R ∨ A)
 
 Proof that W |= H holds using the resolution method.
 
+**Solution**:
+
 Too proof that W |= H , show that W ∧ ¬H is not satisfiable.
 
 ¬H ≡ (¬F ∨ X ∨ ¬B ∨ R ∨ A)
