@@ -92,9 +92,23 @@ Finally, apply the resulting substitution to the whole clause.
  - p(ƒ (X, Y), Z) cant be unified with ¬q(W, b) or r(a, c) because the predicate symbols dont match.
  -  q(a, X) and r(a, c) cant be unified because the predicate symbols dont match.
 
- - 
+ - S{a/W,b/X} is a unifier for ¬q(W, b) and q(a, X):
+
+    S(q(a, X)) = q(W, X)
+
+    S(¬q(W, b)) = ¬q(W, X)
+
+    S(q(a, X)) = ¬S(¬q(W, b)).
+
+- the substituted clauses are then {p(ƒ (X, Y), Z), q(W, X)} and {¬q(W, X), r(a, c)}, which have the resolvant:
+
+    {p(ƒ (X, Y), Z),r(a, c)}
+
 
 {q(ƒ (ƒ (X, Y), X)), ¬p(Z)} and {q(ƒ (ƒ (g(c), Z), g(Z)))}
+
+ - p(Z) cant be unified with q(ƒ (ƒ (X, Y), X)) because the predicate symbols dont match.
+ - 
 
 Hint: Imagine you are trying to apply the resolution rule. Only one literal needs
 to match.
