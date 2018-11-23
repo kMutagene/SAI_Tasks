@@ -23,12 +23,37 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Task1\CheeseShop_KevinSchneider_LukasWeil.py" />
+    <Compile Include="Task2\Exercise_2_KevinSchneider_LukasWeil.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Task3\Exercise_3_KevinSchneider_LukasWeil.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Task4\Exercise_2_KevinSchneider_LukasWeil.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Task5\Exercise_5_KevinSchneider_LukasWeil.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Task6\Exercise_6_KevinSchneider_LukasWeil.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Task1\" />
+    <Folder Include="Task2\" />
+    <Folder Include="Task3\" />
+    <Folder Include="Task4\" />
+    <Folder Include="Task5\" />
+    <Folder Include="Task6\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Task1\Exercise_1_KevinSchneider_LukasWeil.md" />
+    <Content Include="Task2\Exercise_2_KevinSchneider_LukasWeil.md" />
+    <Content Include="Task3\Exercise_3_KevinSchneider_LukasWeil.md" />
+    <Content Include="Task4\Exercise_4_KevinSchneider_LukasWeil.md" />
+    <Content Include="Task5\Exercise_5_KevinSchneider_LukasWeil.md" />
+    <Content Include="Task6\Exercise_6_KevinSchneider_LukasWeil.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
