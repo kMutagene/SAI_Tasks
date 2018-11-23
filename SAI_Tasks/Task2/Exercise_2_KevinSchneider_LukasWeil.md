@@ -71,14 +71,19 @@ prove that by applying the resolution method.
 
 (B ∨ ¬A) ∧ (¬B ∨ ¬X ∨ F) ∧ (¬Z ∨ X) ∧ (Z ∨ X ∨ P) ∧ (¬B ∨ ¬X ∨ ¬F) ∧ (Z ∨ X ∨ ¬P)
 
-**Solution**: The formula is satisfiable. ¬B ¬A X ¬F ¬Z ¬P is a possible solution:
+**Solution**: The formula is satisfiable. ¬B ¬A X ¬F ¬Z ¬P is a possible solution(table is a bit too large for this pdf sorry, you can copy the code in the pre tag to check it):
+
+| B | A | X | F | Z | P | (((((B V| -A)| ∧ |((-B | V  | -X) | V| F)) ∧| (-Z V |X)) ∧ |((Z V |X) V |P)) ∧ |((-B | V |-X) | V | -F))| ∧ |((Z V |X) V |-P)  | 
+|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+| 0 | 0 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | **1** | 1 | 1 | 1 |
 
 <pre>
 B A X F Z P | (((((B V -A) ∧ ((-B V -X) V F)) ∧ (-Z V X)) ∧ ((Z V X) V P)) ∧ ((-B V -X) V -F)) ∧ ((Z V X) V -P)
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-0 0 1 0 0 0 |        1 1   1   1  1 0   1     1  1  1     1     1    1     1   1  1 0   1 1    1     1    1 1  
-</pre>
 
+0 0 1 0 0 0 |        1 1   1   1  1 0   1     1  1  1     1     1    1     1   1  1 0   1 1    1     1    1 1  
+
+</pre>
 ## Task 2 - Unification
 
 Unify the following pairs of clauses. First, select suitable candidates that may
@@ -119,10 +124,13 @@ Hint: Imagine you are trying to apply the resolution rule. Only one literal need
     | {Y =? Z} | ⊥ |
 
 ## Task 3 -
+
 see "FamiliyTree_KevinSchneider_LukasWeil.pl"
 
 ## Task 4 -
+
 see "FamiliyTree_KevinSchneider_LukasWeil.pl"
 
 ## Task 5 -
+
 see "Resolver_KevinSchneider_LukasWeil.py"
