@@ -85,14 +85,16 @@ Unify the following pairs of clauses. First, select suitable candidates that may
 be unifiable from each set, then apply the method described in the lecture.
 Finally, apply the resulting substitution to the whole clause.
 
+Hint: Imagine you are trying to apply the resolution rule. Only one literal needs to match.
+
 {p(ƒ (X, Y), Z), q(a, X)} and {¬q(W, b), r(a, c)}
 
 **Solution**:
 
- - p(ƒ (X, Y), Z) cant be unified with ¬q(W, b) or r(a, c) because the predicate symbols dont match.
- -  q(a, X) and r(a, c) cant be unified because the predicate symbols dont match.
+- p(ƒ (X, Y), Z) cant be unified with ¬q(W, b) or r(a, c) because the predicate symbols dont match.
+- q(a, X) and r(a, c) cant be unified because the predicate symbols dont match.
 
- - S{a/W,b/X} is a unifier for ¬q(W, b) and q(a, X):
+- S{a/W,b/X} is a unifier for ¬q(W, b) and q(a, X):
 
     S(q(a, X)) = q(W, X)
 
@@ -104,14 +106,18 @@ Finally, apply the resulting substitution to the whole clause.
 
     {p(ƒ (X, Y), Z),r(a, c)}
 
-
 {q(ƒ (ƒ (X, Y), X)), ¬p(Z)} and {q(ƒ (ƒ (g(c), Z), g(Z)))}
 
- - p(Z) cant be unified with q(ƒ (ƒ (X, Y), X)) because the predicate symbols dont match.
- - 
+- p(Z) cant be unified with q(ƒ (ƒ (X, Y), X)) because the predicate symbols dont match.
 
-Hint: Imagine you are trying to apply the resolution rule. Only one literal needs
-to match.
+- q(ƒ (ƒ (X, Y), X)) and q(ƒ (ƒ (g(c), Z), g(Z))) are candidates for unification, but substitution of two different constants fails:
+
+    | {q(ƒ (ƒ (X, Y), X)) =? q(ƒ (ƒ (g(c), Z), g(Z)))}| {} |
+    |---|---|
+    | {(ƒ (ƒ (X, Y), X) =? (ƒ (ƒ (g(c), Z), g(Z))} | {} |
+    | {ƒ (X, Y) =? ƒ (g(c), Z) , X =? g(Z)}| {g(c)/X)} |
+    | {Y =? Z} | ⊥ |
+
 ## Task 3 -
 
 ## Task 4 -
