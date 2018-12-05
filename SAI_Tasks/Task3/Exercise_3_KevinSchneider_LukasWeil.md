@@ -93,6 +93,14 @@ $$
     (r(f_{1}(X,Y))  \vee q(Y,f_{2}(X,Y))) \wedge  ((r(f_{1}(X,Y)) \vee \neg p(X,Y,f_{3}(X,Y))))
     $$
 
+    </br>
+
+    As set of literals:
+
+    $$
+    \left\{ \left \{r(f_{1}(X,Y)) , q(Y,f_{2}(X,Y)) \right \}, \left\{r(f_{1}(X,Y)) , \neg p(X,Y,f_{3}(X,Y))\right \}\right \}
+    $$
+
 ## Task 2 -
 
 ## Task 3 -
