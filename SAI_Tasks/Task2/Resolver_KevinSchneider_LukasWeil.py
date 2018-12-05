@@ -3,18 +3,19 @@ import itertools
 # alpha is assumed to be already negated
 def resolve(knowledge: set, alpha) :
     knowledge.add(alpha)
-    def loop(setSize):
-        combs = itertools.combinations(knowledge,2)
+    def loop(setSize):        
+        knowList = list(knowledge)
+        list.sort(knowList, key = len)
+        combs = itertools.combinations(knowList,2)
         for (c1,c2) in combs:
-             c = combine(c1,c2)
-             print(c1)
-             print(c2)
-             print("Combine:")
-             print(c)
-             knowledge.add(c)
-             if c == tuple():
-                
-               
+            print("Clauses:")
+            print(c1)
+            print(c2)
+            c = combine(c1,c2)
+            print("Combine:")
+            print(c)
+            knowledge.add(c)
+            if c == tuple():                               
                 print("Found empty clause")
                 return True
         if len(knowledge) == setSize:
@@ -34,7 +35,7 @@ def combine(clause1:tuple,clause2:tuple) :
         elif -x in l and oneNegation:
             l.remove(-x)
             oneNegation <- False
-        elif -x:
+        elif -x in l:
             ()
         else:
             l.append(x)
