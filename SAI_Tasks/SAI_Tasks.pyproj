@@ -12,6 +12,7 @@
     <OutputPath>.</OutputPath>
     <Name>SAI_Tasks</Name>
     <RootNamespace>SAI_Tasks</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,9 +30,7 @@
     <Compile Include="Task3\Exercise_3_KevinSchneider_LukasWeil.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Task4\Exercise_2_KevinSchneider_LukasWeil.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Task4\Exercise_4_KevinSchneider_LukasWeil.py" />
     <Compile Include="Task5\Exercise_5_KevinSchneider_LukasWeil.py">
       <SubType>Code</SubType>
     </Compile>
@@ -54,6 +53,9 @@
     <Content Include="Task4\Exercise_4_KevinSchneider_LukasWeil.md" />
     <Content Include="Task5\Exercise_5_KevinSchneider_LukasWeil.md" />
     <Content Include="Task6\Exercise_6_KevinSchneider_LukasWeil.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
