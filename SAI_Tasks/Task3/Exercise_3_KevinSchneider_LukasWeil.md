@@ -105,6 +105,95 @@ $$
 
 ## Task 3 -
 
+
+
 ## Task 4 -
+
+Skript: Arztbesuch
+
+Entitäten: 
+	Reception
+	Reception Room
+	Chair in Waiting Room
+	Waiting Room
+	Doctors Room
+	Alices Bed
+	Medical Certificate
+	Doctors Practice
+
+Roles:
+
+	A = Alice
+	R = Receptionist
+	D = Doctor
+	E = Employer
+
+Prerequisites:
+	
+	A is sick 
+	A is worried
+	A has no Medical Certificate
+	D is at work
+
+Postconditions:
+
+	A is relieved
+	A has Medical Certificate
+	
+Events: 
+	
+	Scene 1: Decisionmaking
+		A Expel mucus
+		A Conc
+		A MBuild go to Doctor
+		A PTrans A Doctors Practice
+		A PTrans A Reception Room
+
+	Scene 2: At the Gates
+		A MTrans R personal information and information on disease
+		R Speak A request to sit down in Waiting Room
+		A MBuild sit down in Waiting Room
+		A PTrans to Waiting Room
+		A PTrans to Chair in Waiting Room
+		A Move sit on Chair in Waiting Room
+
+	Scene 3: Time has come
+		D PTrans to Waiting Room
+		D Speak call in Alice
+		A Attend Eyes&Ears to D
+		A MBuild go to Doctors Room
+		A Move stand up
+		A PTrans to Doctors Room
+		D PTrans to Doctors Room
+
+	Scene 4: Final Destination
+		D Speak ask A about problems
+		A Conc
+		A MBuild what exactly are problems
+		A Speak problems
+		D Attend Ears to A
+		D Propel As knee and As chest
+		D Attend Eyes to As throat
+		D Conc
+		D MBuild Diagnosis
+		D Speak Diagnosis to A
+		D Speak to A stay in bed
+		A Attend Ears to D
+		D ATrans Medical Certificate
+
+	Scene 5: Hiatus
+		A MBuild relieve
+		A MBuild go home
+		A PTrans Outside Doctors Practice 
+		A PTrans Bed
+
+
+
+
+
+		
+
+
+
 
 ## Task 5 -
