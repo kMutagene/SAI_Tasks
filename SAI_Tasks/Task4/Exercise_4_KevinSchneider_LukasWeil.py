@@ -1,3 +1,4 @@
+
 import math
 
 from shapely import geometry
@@ -28,20 +29,22 @@ def triang (a, b, m, x) :
     else:
         return (b - x) / (b - m)
 
-def high (temp):
-    return L(30., 40., temp)
+def high (**kwargs):
+    return L(30., 40., kwargs["temp"])
 
-def relHigh (temp):
-    return triang(26., 40., 34., tmp)
+def relHigh (**kwargs):
+    return triang(25., 43., 34., kwargs["temp"])
 
-def med (temp):
-    return triang(16., 34., 25.)
+def med (**kwargs):
+    return triang(16., 34., 25., kwargs["temp"])
 
-def relLow (temp):
-    return triang(8., 24., 16., temp)
+def relLow (**kwargs):
+    return triang(7., 25., 16., kwargs["temp"])
 
-def low (temp):
-    return R(10., 20., temp)
+def low (**kwargs):
+    return R(10., 20., kwargs["temp"])
+
+low(temp=1.)
 
 memberships = [
        high,
@@ -50,6 +53,21 @@ memberships = [
        relLow,
        low
     ]
+
+measured = {
+    "temp"  : 18. ,
+    "dT"    : -0.5
+    }
+
+test = [{"temp" : 0., "soos" : saas}, {"temp":18.}, {"temp" : 25.}, {"temp" : 32.}, {"temp" : 50.} ]
+a = test[1]
+high(**measured)
+
+for f in memberships:
+    for t in test:
+        res = f(**t)
+        print('t={:f} res={:f}'.format(t["temp"],res))
+
 
 
 def fuzzy (measured: dict, memberships: list, rules: list, defuzzification: list) :
