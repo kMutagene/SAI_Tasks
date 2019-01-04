@@ -91,7 +91,7 @@ With fuzzy logic, computers can instead make decisions based on uncertain inform
 
 (b)
 
-![placeholder](Task_4_3_Memberships.png)
+![Imgur](https://i.imgur.com/v1THKcV.png)
 
 (c)
 
@@ -105,7 +105,7 @@ Applying the rules lead to memberships of C:
 
 **MinMax:**
 
-![placeholder](Task_4_3_MinMax.png)
+![Imgur](https://i.imgur.com/MqWwLtE.png)
 
 MinMax inference leads to a centroid at an approx. temperature value of 33,5°C.
 
@@ -141,9 +141,9 @@ Controlled variable:
 
 images:
 
-![placeholder](Exercise_4_KevinSchneider_LukasWeil_Task4_homework.png)
-![placeholder](Exercise_4_KevinSchneider_LukasWeil_Task4_obedience.png)
-![placeholder](Exercise_4_KevinSchneider_LukasWeil_Task4_presents.png)
+![Imgur](https://i.imgur.com/gmaHJc6.png)
+![Imgur](https://i.imgur.com/fwwul4j.png)
+![Imgur](https://i.imgur.com/KAR0S9e.png)
 
 (d)
 
@@ -168,7 +168,7 @@ images:
 
 **MinMax:**
 
-![placeholder](task_4_minmax.png)
+![Imgur](https://i.imgur.com/16q9nbT.png)
 
 This results in 2.26 presents as the x-value of the centroid.
 
