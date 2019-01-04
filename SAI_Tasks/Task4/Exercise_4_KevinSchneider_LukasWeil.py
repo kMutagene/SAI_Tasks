@@ -186,5 +186,5 @@ measured = {
 
 
 #calling the function returns the real value of the control variable
-fuzzy(measured,memberships,rules,defuzzification,True)
+fuzzy(measured,memberships,rules,defuzzifications,True)
 
