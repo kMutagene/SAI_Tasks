@@ -47,35 +47,35 @@ Theoretical analysis can be very useful to choose the best search method
 given the constraints of a specific application and environment.
 a) Define "optimal" and "complete" in the context of search methods.
 
-    >complete:   a search method is described as being complete if it is guaranteed to find a goal state if one exists, and if the state space is finite.
+>complete:   a search method is described as being complete if it is guaranteed to find a goal state if one exists, and if the state space is finite.
         
-    >optimal:    When there are multiple solutions to the problem, the search method finds the best solution (or one of the best if there are multile best solutions) 
+>optimal:    When there are multiple solutions to the problem, the search method finds the best solution (or one of the best if there are multile best solutions) 
                 given a criterium to categorize the "goodness" of a solution (e.g. traversal cost)
     
 b) Explain why the following statements hold:
-    * Breadth-First Search (BFS) has exponential space complexity in depth.
+* Breadth-First Search (BFS) has exponential space complexity in depth.
 
-        >Since all of the nodes of a level must be saved until their child nodes in the next level have been generated, the space
+>Since all of the nodes of a level must be saved until their child nodes in the next level have been generated, the space
         complexity is proportional to the number of nodes at the deepest level. Given a branching factor **_b_** and graph depth **_d_**
         the asymptotic space complexity is the number of nodes at the deepest level, **_O(b<sup>d</sup>)_**, and therefore exponential in depth
 
-    * Depth-First Search (DFS) is not optimal and not complete, but Iterative Deepening DFS (IDS) is.
+* Depth-First Search (DFS) is not optimal and not complete, but Iterative Deepening DFS (IDS) is.
         
-        >Depth-first search isn't guaranteed to halt on graphs with cycles. However, DFS is complete for finite acyclic graphs. 
+>Depth-first search isn't guaranteed to halt on graphs with cycles. However, DFS is complete for finite acyclic graphs. 
         It can “stumble” on longer solution paths before it gets to shorter ones and is therefore not optimal.
 
-        >The depth limitation of IDS at each step of the performed DFS guarantees to find the most shallow solutions (unlike pure DFS which doesn't) and is therefore optimal.
+>The depth limitation of IDS at each step of the performed DFS guarantees to find the most shallow solutions (unlike pure DFS which doesn't) and is therefore optimal.
         This also means that it never ends up exploring along infinite dead-end paths, since the length of each path is capped by some length at each step, and it is therefore complete
 
 c) Give formulas based on depth d and branching factor b of a regular tree
 for the worst-case number of nodes visited by BFS and IDS. What is the
 overhead of IDS over BFS?
 
-    > BFS: O(d<sup>b</sup>)
+> BFS: O(d<sup>b</sup>)
 
-    > IDS: O(d<sup>b</sup>)
+> IDS: O(d<sup>b</sup>)
 
-    > In both cases, the worst case is if the goal is at maximum depth and the respective last child in all child lists of the graph. The advantage of IDS is the lower memory consumption:
+> In both cases, the worst case is if the goal is at maximum depth and the respective last child in all child lists of the graph. The advantage of IDS is the lower memory consumption:
     > At any time IDFS needs to store only the nodes in the branch it is expanding (O(db)), whilde BFS has to store all nodes in the worst case (O(d<sup>b</sup>))
 
 ## Task 3 -
@@ -90,36 +90,36 @@ _NOTE: we assume that the children of nodes are listed in alphabetical order, eg
 
  Breadth-First Search (BFS)
  
-   >For **S** : A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,**S**
+>For **S** : A-B-C-D-E-F-G-H-I-J-K-L-M-N-O-P-Q-R-**S**
    
-   >For **V** : A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,**V**
+>For **V** : A-B-C-D-E-F-G-H-I-J-K-L-M-N-O-P-Q-R-S-T-U-**V**
 
  Depth-First Search (DFS)
 
-   >For **S** : A,B,E,J,K,L,**S**
+>For **S** : A-B-E-J-K-L-**S**
    
-   >For **V** : A,B,E,J,K,L,S,F,M,C,G,N,T,H,O,P,D,I,Q,R,U,**V**
+>For **V** : A-B-E-J-K-L-S-F-M-C-G-N-T-H-O-P-D-I-Q-R-U-**V**
    
  Iterative Deepening Depth-First Search (IDS)
 
-   >For **S** (Complete sequence of visited notes is all depth sequences combined): 
+>For **S** (Complete sequence of visited notes is all depth sequences combined): 
    >
-   > l = 1; A,B,C,D,
+   > l = 1; A-B-C-D-
    >
-   > l = 2; A,B,E,F,C,G,H,D,I
+   > l = 2; A-B-E-F-C-G-H-D-I
    >
-   > l = 3; A,B,E,J,K,L,F,M,C,G,N,H,O,P,D,I,Q,R
+   > l = 3; A-B-E-J-K-L-F-M-C-G-N-H-O-P-D-I-Q-R
    >
-   > l = 4; A,B,E,J,K,L,**S**
+   > l = 4; A-B-E-J-K-L-**S**
    
-   >For **V** (Complete sequence of visited notes is all depth sequences combined): 
-   > l = 1; A,B,C,D,
+>For **V** (Complete sequence of visited notes is all depth sequences combined): 
+   > l = 1; A-B-C-D-
    >
-   > l = 2; A,B,E,F,C,G,H,D,I
+   > l = 2; A-B-E-F-C-G-H-D-I
    >
-   > l = 3; A,B,E,J,K,L,F,M,C,G,N,H,O,P,D,I,Q,R
+   > l = 3; A-B-E-J-K-L-F-M-C-G-N-H-O-P-D-I-Q-R
    > 
-   > l = 3; A,B,E,J,K,L,S,F,M,A,C,G,N,T,H,O,P,D,I,Q,R,U,**V**
+ > l = 3; A-B-E-J-K-L-S-F-M-A-C-G-N-T-H-O-P-D-I-Q-R-U-**V**
 
 b) What is the outcome of Limited Depth-First Search for different limits?
 
@@ -146,7 +146,7 @@ estimated remaining cost. Create a search tree in the following notation:
 
 b) Give the optimal path from A to J with total traversal cost.
 
-    >A-C-E-G-J with total cost of 16.5
+>A-C-E-G-J with total cost of 16.5
 
 ## Task 5 -
 
