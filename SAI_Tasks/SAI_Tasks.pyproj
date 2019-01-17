@@ -44,6 +44,7 @@
     <Folder Include="Task3\" />
     <Folder Include="Task4\" />
     <Folder Include="Task5\" />
+    <Folder Include="Task5\pics\" />
     <Folder Include="Task6\" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +53,13 @@
     <Content Include="Task3\Exercise_3_KevinSchneider_LukasWeil.md" />
     <Content Include="Task4\Exercise_4_KevinSchneider_LukasWeil.md" />
     <Content Include="Task5\Exercise_5_KevinSchneider_LukasWeil.md" />
+    <Content Include="Task5\pics\file.png" />
+    <Content Include="Task5\pics\Task3.jpg" />
+    <Content Include="Task5\pics\Task3.png" />
+    <Content Include="Task5\pics\Task4.2.png" />
+    <Content Include="Task5\pics\Task4.jpg" />
+    <Content Include="Task5\pics\Task4.png" />
+    <Content Include="Task5\Task3.jpg" />
     <Content Include="Task6\Exercise_6_KevinSchneider_LukasWeil.md" />
   </ItemGroup>
   <ItemGroup>

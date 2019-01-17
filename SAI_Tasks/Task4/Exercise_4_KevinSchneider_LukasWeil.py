@@ -81,7 +81,6 @@ shapes = {
     "lowShape" : geometry.Polygon([(0.,1.),(10.,1.),(20.,0.),(0.,0.)])
     }
 
-
 #Fuzzy rules of the system
 
 def R1 (**kwargs) :
