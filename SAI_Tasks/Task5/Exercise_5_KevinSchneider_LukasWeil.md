@@ -22,6 +22,8 @@ applicable value range for each function as cases with appropriate conditions, e
 
 _e_<sub>4</sub>(x,y)= { (0,y), if x<0 (empty)
 
+### Answers:
+
 (a)
 
 	x = amount of water in the 4-Gallons jug
@@ -36,10 +38,34 @@ _e_<sub>4</sub>(x,y)= { (0,y), if x<0 (empty)
 
 (b)
 
-	f3(x,y) = {(x, 3), if y < 3 (fill 3G)
-	f3(x,y) = {(4, y), if x < 4 (fill 4G)
-	e3(x,y) = {(x, 0), if y > 0 (empty 3G)
-	e4(x,y) = {(0, y), if x > 0 (empty 4G)
+    f3(x,y) = {
+        (x, 3), if y < 3 
+        (fill 3G)
+    f4(x,y) = {
+        (4, y), if x < 4 
+        (fill 4G)
+    e3(x,y) = {
+        (x, 0), if y > 0 
+        (empty 3G)
+    e4(x,y) = {
+        (0, y), if x > 0 
+        (empty 4G)
+    pu34(x,y) = {
+        (4,(y-(4-x))), if y > 0 & (x+y) > 4;
+        ((x+y),0), if y > 0 & (x+y) <= 4
+        (pour 3G into 4G until 4g full)
+    pu43(x,y) = {
+        ((x-(3-y)),3), if x > 0 & (x+y) > 3;
+        (0,(x+y)), if x > 0 & (x+y) <= 3
+        (pour 4G into 3G until 3g full)
+    pa34(x,y) = {
+        (4,0), if y > 0 & (x+y) > 4;
+        ((x+y),0), if y > 0 & (x+y) <= 4
+        (pour all of 3G into 4G)
+    pa43(x,y) = {
+        (0,3), if x > 0 & (x+y) > 3;
+        (0,(x+y)), if x > 0 & (x+y) <= 3
+        (pour all of 4G into 3G)
 
 ## Task 2 - Search complexity
 
