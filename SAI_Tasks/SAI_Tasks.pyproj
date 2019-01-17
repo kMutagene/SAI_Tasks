@@ -52,11 +52,16 @@
     <Content Include="Task2\Exercise_2_KevinSchneider_LukasWeil.md" />
     <Content Include="Task3\Exercise_3_KevinSchneider_LukasWeil.md" />
     <Content Include="Task4\Exercise_4_KevinSchneider_LukasWeil.md" />
+    <Content Include="Task5\Exercise_5_KevinSchneider_LukasWeil.html">
+      <SubType>Content</SubType>
+      <DependentUpon>Task5\Exercise_5_KevinSchneider_LukasWeil.md</DependentUpon>
+    </Content>
     <Content Include="Task5\Exercise_5_KevinSchneider_LukasWeil.md" />
     <Content Include="Task5\pics\file.png" />
     <Content Include="Task5\pics\Task1.png" />
     <Content Include="Task5\pics\Task3.jpg" />
     <Content Include="Task5\pics\Task3.png" />
+    <Content Include="Task5\pics\Task4.1.png" />
     <Content Include="Task5\pics\Task4.2.png" />
     <Content Include="Task5\pics\Task4.jpg" />
     <Content Include="Task5\pics\Task4.png" />
